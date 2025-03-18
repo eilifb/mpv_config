@@ -1,0 +1,18 @@
+[submodule "scripts/mpv-autosub"]
+	path = scripts/mpv-autosub
+	url = https://github.com/eilifb/mpv-autosub
+[submodule "scripts/ModernX"]
+	path = scripts/ModernX
+	url = https://github.com/eilifb/ModernX
+[submodule "scripts/thumbfast"]
+	path = scripts/thumbfast
+	url = https://github.com/eilifb/thumbfast
+[submodule "scripts/mpv-open-imdb-page"]
+	path = scripts/mpv-open-imdb-page
+	url = https://github.com/eilifb/mpv-open-imdb-page
+[submodule "scripts/mpv-open-mal-page"]
+	path = scripts/mpv-open-mal-page
+	url = https://github.com/eilifb/mpv-open-mal-page
+[submodule "scripts/autosubsync-mpv"]
+	path = scripts/autosubsync-mpv
+	url = https://github.com/Ajatt-Tools/autosubsync-mpv

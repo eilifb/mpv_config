@@ -1,0 +1,6 @@
+/fonts/*
+/script-opts/*
+/scripts/mpv-menu-plugin
+/scripts/menu.dll
+/cache/*
+input_copy.conf
