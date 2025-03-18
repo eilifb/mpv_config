@@ -21,6 +21,9 @@
 ## Installation
 
 ### Setup
+The files can either go directly into `C:\users\USERNAME\AppData\Roaming\mpv`
+or into a directory named `portable_config` in your `mpv` install location
+(e.g. `C:\Program Files\mpv\portable_config`)
 
 ```powershell
 git clone --recurse-submodules -j8 https://github.com/eilifb/mpv_config
@@ -31,7 +34,7 @@ or you can run
 ```powershell
 ./install.ps1
 ```
-You need configure some of the scripts`script-opts` configuration file regardless.
+You need configure some of the scripts`script-opts` configuration files regardless.
 
 
 #### Script setup
