@@ -3,7 +3,7 @@ mkdir script-opts
 mkdir fonts
 
 ### ModernX             ###
-New-Item -Path ../fonts/fluent-system-icons.ttf -ItemType HardLink -Value ./scripts/ModernX/fluent-system-icons.ttf
+New-Item -Path ./fonts/fluent-system-icons.ttf -ItemType HardLink -Value ./scripts/ModernX/fluent-system-icons.ttf
 
 ### Menu Plugin         ###
 Invoke-WebRequest -Uri "https://github.com/tsl0922/mpv-menu-plugin/releases/download/2.4.1/menu.zip" -OutFile ./mpv-menu-plugin.zip
