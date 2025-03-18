@@ -1,0 +1,2 @@
+audio tests:    https://drive.google.com/drive/folders/1JxmeedtAtgmoafXv9rroiDOS2vEX7N4b
+video tests:    https://repo.jellyfin.org/test-videos/
