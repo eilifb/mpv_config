@@ -19,19 +19,37 @@
 <a name="#inst" />
 
 ## Installation
-    ```powershell
-    git clone --recurse-submodules -j8 https://github.com/eilifb/mpv_config
-    cd mpv_config
-    mkdir script-opts
-    mkdir fonts
-    ```
+
+### Setup
+
+```powershell
+git clone --recurse-submodules -j8 https://github.com/eilifb/mpv_config
+cd mpv_config
+```
+From here you can either set up each script manually as described below,
+or you can run
+```powershell
+./install.ps1
+```
+You need configure some of the scripts`script-opts` configuration file regardless.
+
+
+#### Script setup
 
 * ModernX
+
+    - `fonts/fluent-system-icons.ttf`
+    - `script-opts/modernx.conf` (Optional)
     ```powershell
     New-Item -Path ../fonts/fluent-system-icons.ttf -ItemType HardLink -Value ./scripts/ModernX/fluent-system-icons.ttf
     ```
 
 * Menu Plugin
+
+    Needs to be downloaded seperately. The files can be placed in the main `scripts` folder or
+    in a sub directory with a `main.lua` file. Exception is `menu.dll` which needs to be in the `scripts` folder.
+
+    I chose to create a sub-directory and hard-link `menu.dll` (for some reason).
     ```powershell
     Invoke-WebRequest -Uri "https://github.com/tsl0922/mpv-menu-plugin/releases/download/2.4.1/menu.zip" -OutFile ./mpv-menu-plugin.zip
     Expand-Archive -Path ./mpv-menu-plugin.zip -DestinationPath ./scripts -Force
@@ -42,27 +60,37 @@
     ```
 
 * Thumbfast
+
+    - `script-opts/thumbfast.conf`
+
+    I chose to copy over the example conf file.
     ```powershell
     cp ./scripts/thumbfast ./script-opts/thumbfast.conf
     ```
+
 * Auto Sub
+
+    - [subliminal Python package](https://pypi.org/project/subliminal/)
+    - `script-opts/autosub.conf`
     ```powershell
     pip install subliminal
     ```
 
-    Set up `script-opts/autosub.conf`
-
 * Auto Sub Sync
 
-    Set up `script-opts/autosubsync.conf`
+    - `script-opts/autosubsync.conf`
 
 * mpv-open-imdb-page
+
+    - [GuessIt Python package](https://pypi.org/project/guessit/)
     ```powershell
     pip install guessit
     pip install git+https://github.com/cinemagoer/cinemagoer
     ```
 
 * Auto Deinterlace
+
+    Has to be downloaded seperately.
     ```powershell
     Invoke-WebRequest -Uri https://raw.githubusercontent.com/mpv-player/mpv/refs/heads/master/TOOLS/lua/autodeint.lua -Outfile ./scripts/autodeint.lua
     ```
@@ -76,7 +104,7 @@
 - [ ] Vertify audio downmixing settings
 - [ ] Look into audio normalization
 - [ ] Clean up `input.conf`
-. [ ] Clean up `mpv.conf`
+- [ ] Clean up `mpv.conf`
 - [ ] Look into upscaling shaders
 - [ ] Write install script
 - [ ] Complete `mpv-open-mal-page`
