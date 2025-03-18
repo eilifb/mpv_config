@@ -13,12 +13,23 @@
 4. [Auto Sub](https://github.com/eilifb/mpv-autosub)
 5. [Auto Sub Sync](https://github.com/Ajatt-Tools/autosubsync-mpv)
 6. [Auto Deinterlace](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)
-7. [Open IMDb](https://github.com/eilifb/mpv-open-imdb-page)
-8. [Open MAL](https://github.com/eilifb/mpv-open-mal-page) (WIP)
+7. [Open IMDb Page](https://github.com/eilifb/mpv-open-imdb-page)
+8. [Open MAL Page](https://github.com/eilifb/mpv-open-mal-page) (WIP)
 
 <a name="#inst" />
 
 ## Installation
+    ```powershell
+    git clone --recurse-submodules -j8 https://github.com/eilifb/mpv_config
+    cd mpv_config
+    mkdir script-opts
+    mkdir fonts
+    ```
+
+* ModernX
+    ```powershell
+    New-Item -Path ../fonts/fluent-system-icons.ttf -ItemType HardLink -Value ./scripts/ModernX/fluent-system-icons.ttf
+    ```
 
 * Menu Plugin
     ```powershell
@@ -30,11 +41,10 @@
     Remove-Item -Path ./mpv-menu-plugin.zip -Force
     ```
 
-* ModernX
+* Thumbfast
     ```powershell
-    New-Item -Path ../fonts/fluent-system-icons.ttf -ItemType HardLink -Value ./scripts/ModernX/fluent-system-icons.ttf
+    cp ./scripts/thumbfast ./script-opts/thumbfast.conf
     ```
-
 * Auto Sub
     ```powershell
     pip install subliminal
@@ -62,11 +72,11 @@
 
 ## TODO
 
-- [] Vertify HDR profile quality
-- [] Vertify audio downmixing settings
-- [] Look into audio normalization
-- [] Clean up `input.conf`
-. [] Clean up `mpv.conf`
-- [] Look into upscaling shaders
-- [] Write install script
-- [] Complete `mpv-open-mal-page`
+- [ ] Vertify HDR profile quality
+- [ ] Vertify audio downmixing settings
+- [ ] Look into audio normalization
+- [ ] Clean up `input.conf`
+. [ ] Clean up `mpv.conf`
+- [ ] Look into upscaling shaders
+- [ ] Write install script
+- [ ] Complete `mpv-open-mal-page`
