@@ -91,6 +91,14 @@ You need configure some of the scripts`script-opts` configuration files regardle
     pip install git+https://github.com/cinemagoer/cinemagoer
     ```
 
+* mpv-open-mal-page
+
+    - [GuessIt Python package](https://pypi.org/project/guessit/)
+    ```powershell
+    pip install guessit
+    pip install git+https://github.com/cinemagoer/cinemagoer
+    ```
+
 * Auto Deinterlace
 
     Has to be downloaded seperately.
@@ -108,6 +116,7 @@ You need configure some of the scripts`script-opts` configuration files regardle
 - [ ] Look into audio normalization
 - [ ] Clean up `input.conf`
 - [ ] Clean up `mpv.conf`
+- [ ] OSX/Linux support
 - [ ] Look into upscaling shaders
-- [ ] Write install script
-- [ ] Complete `mpv-open-mal-page`
+- [x] Write install script
+- [x] Complete `mpv-open-mal-page`
