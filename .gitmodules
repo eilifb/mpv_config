@@ -16,3 +16,6 @@
 [submodule "scripts/autosubsync-mpv"]
 	path = scripts/autosubsync-mpv
 	url = https://github.com/Ajatt-Tools/autosubsync-mpv
+[submodule "scripts/audio-tools"]
+	path = scripts/audio-tools
+	url = https://github.com/eilifb/audio-tools
