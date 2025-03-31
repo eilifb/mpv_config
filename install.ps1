@@ -23,3 +23,5 @@ pip install git+https://github.com/cinemagoer/cinemagoer
 ### Auto Deinterlace    ###
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/mpv-player/mpv/refs/heads/master/TOOLS/lua/autodeint.lua -Outfile ./scripts/autodeint.lua
 
+### Auto Crop           ###
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/mpv-player/mpv/refs/heads/master/TOOLS/lua/autocrop.lua -Outfile ./scripts/autocrop.lua

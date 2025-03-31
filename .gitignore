@@ -3,6 +3,8 @@
 /script-opts/*
 /scripts/mpv-menu-plugin
 /scripts/menu.dll
+/scripts/autodeint.lua
+/scripts/autocrop.lua
 /extras/*.lua
 /cache/*
 input_copy.conf

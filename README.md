@@ -13,8 +13,9 @@
 4. [Auto Sub](https://github.com/eilifb/mpv-autosub)
 5. [Auto Sub Sync](https://github.com/Ajatt-Tools/autosubsync-mpv)
 6. [Auto Deinterlace](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)
-7. [Open IMDb Page](https://github.com/eilifb/mpv-open-imdb-page)
-8. [Open MAL Page](https://github.com/eilifb/mpv-open-mal-page) (WIP)
+7. [Auto Crop](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autocrop.lua)
+8. [Open IMDb Page](https://github.com/eilifb/mpv-open-imdb-page)
+9. [Open MAL Page](https://github.com/eilifb/mpv-open-mal-page)
 
 <a name="#inst" />
 
@@ -83,6 +84,19 @@ You need configure some of the scripts`script-opts` configuration files regardle
 
     - `script-opts/autosubsync.conf`
 
+* Auto Deinterlace
+
+    Has to be downloaded seperately.
+    ```powershell
+    Invoke-WebRequest -Uri https://raw.githubusercontent.com/mpv-player/mpv/refs/heads/master/TOOLS/lua/autodeint.lua -Outfile ./scripts/autodeint.lua
+    ```
+
+* Auto Crop
+    Has to be downloaded seperately.
+    ```powershell
+    Invoke-WebRequest -Uri https://raw.githubusercontent.com/mpv-player/mpv/refs/heads/master/TOOLS/lua/autocrop.lua -Outfile ./scripts/autocrop.lua
+    ```
+
 * mpv-open-imdb-page
 
     - [GuessIt Python package](https://pypi.org/project/guessit/)
@@ -96,16 +110,7 @@ You need configure some of the scripts`script-opts` configuration files regardle
     - [GuessIt Python package](https://pypi.org/project/guessit/)
     ```powershell
     pip install guessit
-    pip install git+https://github.com/cinemagoer/cinemagoer
     ```
-
-* Auto Deinterlace
-
-    Has to be downloaded seperately.
-    ```powershell
-    Invoke-WebRequest -Uri https://raw.githubusercontent.com/mpv-player/mpv/refs/heads/master/TOOLS/lua/autodeint.lua -Outfile ./scripts/autodeint.lua
-    ```
-
 
 <a name="#todo" />
 
@@ -113,7 +118,7 @@ You need configure some of the scripts`script-opts` configuration files regardle
 
 - [ ] Vertify HDR profile quality
 - [ ] Vertify audio downmixing settings
-- [ ] Look into audio normalization
+- [x] Look into audio normalization
 - [ ] Clean up `input.conf`
 - [ ] Clean up `mpv.conf`
 - [ ] OSX/Linux support
